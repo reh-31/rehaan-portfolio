@@ -1,7 +1,7 @@
 # Rehaan-portfolio
 
 A personal portfolio website showcasing my work in Machine Learning, Generative AI, and Data Engineering.
-Built with HTML + CSS — fast, simple, and clean.
+Built with HTML + CSS - fast, simple, and clean.
 
 🚀 Features
 

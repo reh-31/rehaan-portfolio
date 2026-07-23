@@ -211,10 +211,16 @@
             <span class="project-cat">Recommender Systems</span>
           </div>
           <h3>AI Music Recommender</h3>
-          <p>An intelligent recommender that suggests music based on user preferences and audio features, exploring content-based and heuristic approaches.</p>
+          <p>A content-based recommendation engine that surfaces similar songs from lyrical content using TF-IDF vectorisation and cosine-similarity Nearest Neighbours over the Spotify Million Song Dataset, focused on cold-start resilience and inference latency.</p>
+          <ul>
+            <li>Top-5 recommendations with similarity match scoring, served in under a second</li>
+            <li>Cold-start resilient — works on new and niche tracks with zero interaction data</li>
+            <li>Pickled model and precomputed TF-IDF matrix eliminate retraining on every request</li>
+            <li>Graceful fallback to artist + title metadata for records with missing lyrics</li>
+          </ul>
           <div class="project-footer">
             <div class="project-tech">
-              <span>PYTHON</span><span>ML</span><span>PANDAS</span><span>NUMPY</span>
+              <span>PYTHON</span><span>SCIKIT-LEARN</span><span>TF-IDF</span><span>PANDAS</span><span>NUMPY</span>
             </div>
             <a href="https://github.com/reh-31/AI-music-Recommender" target="_blank" rel="noreferrer" class="project-link">GitHub ↗</a>
           </div>
@@ -223,15 +229,22 @@
         <article class="project-card fade-in">
           <div class="project-header">
             <span class="project-num">04</span>
-            <span class="project-cat">Security · ML</span>
+            <span class="project-cat">Agentic Pipelines · Video Gen</span>
           </div>
-          <h3>AI Threat Detection</h3>
-          <p>ML-based threat detection focusing on feature engineering and model robustness for security-related datasets.</p>
+          <h3>Photo-to-Video Pipeline</h3>
+          <p>A multi-node LangGraph pipeline that turns photo directories and a text prompt into narrated, rendered video — Gemini vision analysis, storyboarding, TTS narration, and Remotion rendering, focused on grounded code generation.</p>
+          <ul>
+            <li>Task-specific dual-collection RAG (ChromaDB) prevents retrieval pollution across doc types</li>
+            <li>Self-correcting loop retries failed builds via error-driven RAG, capped at 3 attempts</li>
+            <li>Per-node model selection minimises API cost across the vision workload</li>
+            <li>Full retrieval trace persisted for post-run auditability</li>
+            <li>Zero-cost offline TTS narration via Edge TTS, embedded per-scene into Remotion</li>
+          </ul>
           <div class="project-footer">
             <div class="project-tech">
-              <span>PYTHON</span><span>SCIKIT-LEARN</span><span>SECURITY DATASETS</span>
+              <span>LANGGRAPH</span><span>CHROMADB</span><span>GEMINI</span><span>SENTENCE-TRANSFORMERS</span><span>REMOTION</span><span>EDGE TTS</span><span>PYTHON</span><span>TYPESCRIPT</span>
             </div>
-            <a href="https://github.com/reh-31/AI-Threat-detection" target="_blank" rel="noreferrer" class="project-link">GitHub ↗</a>
+            <a href="https://github.com/reh-31/Image-to-Video-Multiagent-Pipeline-" target="_blank" rel="noreferrer" class="project-link">GitHub ↗</a>
           </div>
         </article>
 
@@ -241,10 +254,16 @@
             <span class="project-cat">Web App</span>
           </div>
           <h3>PantryPilot</h3>
-          <p>A web-based pantry management tool that helps users track ingredients and reduce food waste.</p>
+          <p>A full-stack Flask application that turns arbitrary ingredient lists into complete step-by-step recipes via the Google Gemini API, focused on output consistency and secure deployment practices.</p>
+          <ul>
+            <li>Structured prompt engineering enforces a consistent recipe schema (title, ingredients, numbered steps)</li>
+            <li>Generates novel recipes for any ingredient combination — no pre-built recipe database required</li>
+            <li>Secure API key handling via python-dotenv and environment-variable injection</li>
+            <li>Modular backend separating config, routing, and templating for maintainability</li>
+          </ul>
           <div class="project-footer">
             <div class="project-tech">
-              <span>PYTHON</span><span>HTML</span><span>CSS</span><span>JAVASCRIPT</span>
+              <span>PYTHON</span><span>FLASK</span><span>GEMINI API</span><span>HTML</span><span>CSS</span><span>JAVASCRIPT</span>
             </div>
             <a href="https://github.com/reh-31/PantryPilot" target="_blank" rel="noreferrer" class="project-link">GitHub ↗</a>
           </div>
@@ -256,10 +275,16 @@
             <span class="project-cat">RAG · Experimental</span>
           </div>
           <h3>Quantum Caffeinated Chaos</h3>
-          <p>A coffee-powered RAG agent that "philosophically understands caffeine" — playful experimentation with retrieval-augmented generation and prompt engineering.</p>
+          <p>A fully offline document-grounded RAG system with a four-stage agentic pipeline — plan → retrieve → answer → reflect — running entirely on local models with no cloud API dependency, focused on answer grounding and reasoning transparency.</p>
+          <ul>
+            <li>Semantic reflection node validates that generated answers are grounded in retrieved context</li>
+            <li>Zero cloud dependency — local FLAN-T5 generation with all-MiniLM-L6-v2 embeddings</li>
+            <li>PDF and text ingestion via LangChain loaders into a persistent ChromaDB vector store</li>
+            <li>Dynamic numeric-matching logic to handle quantitative queries that pure semantic search misses</li>
+          </ul>
           <div class="project-footer">
             <div class="project-tech">
-              <span>PYTHON</span><span>RAG</span><span>LLMS</span><span>LANGCHAIN</span>
+              <span>PYTHON</span><span>RAG</span><span>LANGCHAIN</span><span>CHROMADB</span><span>FLAN-T5</span>
             </div>
             <a href="https://github.com/reh-31/quantum-caffeinated-chaos" target="_blank" rel="noreferrer" class="project-link">GitHub ↗</a>
           </div>

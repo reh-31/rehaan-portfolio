@@ -1,0 +1,36 @@
+# Rehaan Mirajwale
+
+> AI Engineer based in Bangalore, India. Builds LLM pipelines, multi-agent workflows (LangGraph), Retrieval-Augmented Generation (RAG) systems, and real-time speech recognition (ASR) in production with Python, PyTorch, FastAPI, and Docker. MSc Data Science & AI, University of Liverpool. Open to AI Engineering, ML Engineering, and Generative AI roles.
+
+Contact: rehanmirajwale45@gmail.com
+
+## Links
+
+- [Resume (PDF)](resume.pdf)
+- [GitHub](https://github.com/reh-31)
+- [LinkedIn](https://www.linkedin.com/in/rehaan-mirajwale-baa016243)
+
+## Experience
+
+- Junior AI Engineer, Cynergy AI & Automation (Feb 2026 – May 2026, India): multilingual real-time ASR pipeline (Faster-Whisper, ElevenLabs STT) for 10+ Indian languages with language detection, speaker diarization, and streaming; "Smart Stitcher" transcript post-processing for rolling-window audio; LLM clinical information extraction with transcript-grounded validation, delivered over FastAPI WebSockets.
+- Warehouse Operative, Sainsbury's (Argos) (Oct 2024 – Oct 2025, UK, alongside MSc): worked with Honeywell voice-automation systems.
+- ML & Data Intern, Government Tool Training Centre (Jan 2024 – Mar 2024, India): IoT safety-monitoring platform with anomaly detection; ~15% fewer false alerts, ~20% lower response latency.
+
+## Projects
+
+- [Photo-to-Video Pipeline](https://github.com/reh-31/Image-to-Video-Multiagent-Pipeline-): 7-node multi-agent LangGraph pipeline turning photos + a prompt into narrated video; Gemini vision, dual-collection RAG (ChromaDB + sentence-transformers), self-correcting build retries, Remotion rendering.
+- [Quantum Caffeinated Chaos](https://github.com/reh-31/quantum-caffeinated-chaos): fully offline RAG QA system (plan → retrieve → answer → reflect) with FLAN-T5 and all-MiniLM-L6-v2; reflection step validates grounding.
+- Generative Diffusion Model for Kagome Lattice Design (MSc): fine-tuned Microsoft MatterGen with adapters; 2× discovery rate, ~80% structural validity, ~30% lower compute.
+- [AI Music Recommender](https://github.com/reh-31/AI-music-Recommender): TF-IDF + cosine k-NN over the Spotify Million Song Dataset; top-5 results in under a second.
+- [PantryPilot](https://github.com/reh-31/PantryPilot): Flask + Gemini app turning ingredient lists into schema-consistent recipes.
+- Multi-Class Image Classifier: ResNet50 transfer learning on 25K images; 94.5% validation accuracy; Dockerised REST API.
+
+## Skills
+
+LLMs, RAG, Multi-Agent Systems, Diffusion Models, Deep Learning, NLP, ASR, Prompt Engineering, Fine-Tuning; PyTorch, TensorFlow, Hugging Face Transformers, LangChain, LangGraph, FastAPI, Scikit-learn; Python, SQL, Docker, Kubernetes, WebSocket streaming.
+
+## Education & certifications
+
+- MSc Data Science & Artificial Intelligence, University of Liverpool (2024 – 2025)
+- B.E. Electronics & Communication Engineering, KLS Gogte Institute of Technology (2020 – 2024)
+- Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate
